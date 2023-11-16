@@ -1,7 +1,12 @@
-import './App.css';
+import { TruncateText } from 'src/hocs';
+import { HelloWorld } from 'src/components';
 
 function App() {
-  return <div>Hello, world</div>;
+  return (
+    <TruncateText>
+      <HelloWorld />
+    </TruncateText>
+  );
 }
 
 export default App;
